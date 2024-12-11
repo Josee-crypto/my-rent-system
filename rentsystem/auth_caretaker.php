@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } elseif ($action === 'fetch_tenants') {
             try {
                 // Fetch tenants from the database
-                $stmt = $pdo->prepare("SELECT full_name, email, phone_number FROM users WHERE user_type = 'tenant'");
+                $stmt = $pdo->prepare("SELECT full_name, phone_number, house_number FROM users WHERE user_type = 'tenant'");
                 $stmt->execute();
                 $tenants = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
