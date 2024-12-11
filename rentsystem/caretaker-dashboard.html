@@ -23,7 +23,7 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Email</th>
+                    <th>House Assigned</th>
                     <th>Phone Number</th>
                 </tr>
             </thead>
@@ -64,7 +64,7 @@
        // Fetch tenant details for caretaker dashboard
        $(document).ready(function () {
     // Fetch tenants on page load
-    $.ajax({
+   $.ajax({
     url: 'auth_caretaker.php',
     method: 'POST',
     data: { action: 'fetch_tenants' },
@@ -86,7 +86,7 @@
                 tenantRows += `
                     <tr>
                         <td>${tenant.full_name}</td>
-                        <td>${tenant.email}</td>
+                        <td>${tenant.house_number}</td>
                         <td>${tenant.phone_number}</td>
                     </tr>
                 `;
