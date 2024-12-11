@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Rentals - Welcome</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                        url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 50px;
+        }
+        .auth-buttons {
+            margin-top: 20px;
+        }
+        .auth-buttons .btn {
+            margin: 0 10px;
+            padding: 10px 30px;
+        }
+        .navbar {
+            background-color: #2c3e50 !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="https://jeffrentals.com"><i class="fas fa-home"></i> Jeff Rentals</a>
+            <div class="auth-buttons">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adminLoginModal">
+                    Admin Login
+                </button>
+                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#caretakerLoginModal">
+                    Caretaker Login
+                </button>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#tenantLoginModal">
+                    Tenant Login
+                </button>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#registerModal">
+                    Register as Tenant
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to Jeff Rentals</h1>
+            <p class="lead">Your Premier Property Management Solution</p>
+        </div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div class="modal fade" id="adminLoginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Admin Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="adminLoginForm">
+                        <div class="mb-3">
+                            <label class="form-label">Admin Username</label>
+                            <input type="text" class="form-control" id="adminUsername" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" id="adminPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login as Admin</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Caretaker Login Modal -->
+<div class="modal fade" id="caretakerLoginModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Caretaker Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="caretakerLoginForm">
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="caretakerEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" id="caretakerPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-info w-100">Login as Caretaker</button>
+                </form>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+    <!-- Tenant Login Modal -->
+    <div class="modal fade" id="tenantLoginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tenant Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="tenantLoginForm">
+                        <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="tenantEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" id="tenantPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Login as Tenant</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Register as New Tenant</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="tenantRegistrationForm">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Admin Login AJAX
+        $('#adminLoginForm').on('submit', function(e) {
+    e.preventDefault();
+
+    const username = $('#adminUsername').val();
+    const password = $('#adminPassword').val();
+
+    console.log({ username, password }); // Debug data being sent
+
+    $.ajax({
+        url: 'auth.php',
+        method: 'POST',
+        data: {
+            action: 'admin_login',
+            username,
+            password
+        },
+        success: function(response) {
+            console.log('Response:', response); // Log server response
+            if(response === 'success') {
+                window.location.href = 'admin-dashboard.html';
+            } else {
+                Swal.fire('Error', response, 'error'); // Show exact server response
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error('AJAX Error:', error); // Log AJAX errors
+        }
+    });
+});
+
+ // Caretaker Login AJAX
+$('#caretakerLoginForm').on('submit', function(e) {
+    e.preventDefault();
+
+    const email = $('#caretakerEmail').val();
+    const password = $('#caretakerPassword').val();
+
+    console.log({ email, password }); // Debug data being sent
+
+    $.ajax({
+        url: 'auth_caretaker.php',
+        method: 'POST',
+        data: {
+            action: 'caretaker_login',
+            email,
+            password
+        },
+        success: function(response) {
+            console.log('Response:', response); // Log server response
+            if (response === 'success') {
+                window.location.href = 'caretaker-dashboard.html';
+            } else {
+                Swal.fire('Error', response, 'error'); // Show exact server response
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error('AJAX Error:', error); // Log AJAX errors
+        }
+    });
+});
+
+
+
+        // Tenant Login AJAX
+        $('#tenantLoginForm').on('submit', function(e) {
+            e.preventDefault();
+            $.ajax({
+                url: 'auth.php',
+                method: 'POST',
+                data: {
+                    action: 'tenant_login',
+                    email: $('#tenantEmail').val(),
+                    password: $('#tenantPassword').val()
+                },
+                success: function(response) {
+                    if(response === 'success') {
+                        window.location.href = 'tenant-portal.php';
+                    } else {
+                        Swal.fire('Error', 'Invalid login credentials', 'error');
+                    }
+                }
+            });
+        });
+
+        // Tenant Registration AJAX
+        $('#tenantRegistrationForm').on('submit', function(e) {
+            e.preventDefault();
+
+            var fullName = $('#fullName').val();
+            var email = $('#email').val();
+            var phone = $('#phone').val();
+            var password = $('#password').val();
+            var confirmPassword = $('#confirmPassword').val();
+
+            // Validate password match
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            // Send data to the server
+            $.ajax({
+                url: 'auth.php',
+                method: 'POST',
+                data: {
+                    action: 'register_tenant',
+                    fullName: fullName,
+                    email: email,
+                    phone: phone,
+                    password: password,
+                    confirmPassword: confirmPassword
+                },
+                success: function(response) {
+                    if(response === 'success') {
+                        Swal.fire('Success', 'Registration successful!', 'success');
+                        $('#registerModal').modal('hide');
+                        $('#tenantLoginModal').modal('show');
+                    } else {
+                        Swal.fire('Error', response, 'error');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

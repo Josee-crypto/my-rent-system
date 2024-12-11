@@ -1,0 +1,225 @@
+Script started
+Received Data: Array
+(
+    [tenantId] => 43
+    [houseNumber] => 1
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 43
+    [houseNumber] => 1
+)
+
+Failed to assign house number
+Unexpected Output: {"status":"error","message":"Failed to assign house number. Tenant not found or update failed."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 43
+    [houseNumber] => 1E
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 43
+    [houseNumber] => 1
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => 1E
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => 1E
+)
+
+Failed to assign house number
+Unexpected Output: {"status":"error","message":"Failed to assign house number. Tenant not found or update failed."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 43
+    [houseNumber] => ROOM A1
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 43
+    [houseNumber] => ROOM A1
+)
+
+Failed to assign house number
+Unexpected Output: {"status":"error","message":"Failed to assign house number. Tenant not found or update failed."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 43
+    [houseNumber] => ROOM A1
+)
+
+Failed to assign house number
+Unexpected Output: {"status":"error","message":"Failed to assign house number. Tenant not found or update failed."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => ROOM Aa
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => 1E
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => ROOM Aa
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => ROOM Aa
+)
+
+Failed to assign house number
+Unexpected Output: {"status":"error","message":"Failed to assign house number. Tenant not found or update failed."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => 1
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => 1
+)
+
+Failed to assign house number
+Unexpected Output: {"status":"error","message":"Failed to assign house number. Tenant not found or update failed."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => ROOM Aa
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => ROOM Aa
+)
+
+Failed to assign house number
+Unexpected Output: {"status":"error","message":"Failed to assign house number. Tenant not found or update failed."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => 1
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => 1
+)
+
+Failed to assign house number
+Unexpected Output: {"status":"error","message":"Failed to assign house number. Tenant not found or update failed."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => 1
+)
+
+Failed to assign house number
+Unexpected Output: {"status":"error","message":"Failed to assign house number. Tenant not found or update failed."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 42
+    [houseNumber] => ROOM A1
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 43
+    [houseNumber] => 1
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 44
+    [houseNumber] => 1Er
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 43
+    [houseNumber] => ROOM A1
+)
+
+House number assigned successfully
+Unexpected Output: {"status":"success","message":"House number assigned successfully."}
+Script started
+Received Data: Array
+(
+    [tenantId] => 43
+    [houseNumber] => ROOM A1
+)
+
+Failed to assign house number
+Unexpected Output: {"status":"error","message":"Failed to assign house number. Tenant not found or update failed."}
